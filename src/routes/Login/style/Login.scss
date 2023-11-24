@@ -1,0 +1,158 @@
+$cor:#2a25b5;
+$cor2: #0075c5;
+$cor3: #00395f;
+$cor4: #ffffff;
+$font-color: #000000;
+$box-shadow-color: rgba(0, 0, 0, 0.25);
+$primary-font-size: 16px;
+$secondary-font-size: 24px;
+$heading-font-weight: 500;
+
+@import url("https://fonts.googleapis.com/css2?family=Murecho:wght@500&family=Poppins&display=swap");
+
+h1 {
+  font-size: $secondary-font-size;
+  font-family: "Murecho", sans-serif;
+  font-weight: $heading-font-weight;
+  color: $font-color;
+}
+
+p {
+  font-size: $primary-font-size;
+  font-family: "Poppins", sans-serif;
+  color: $font-color;
+}
+
+.navbar {
+  box-shadow: 0px 4px 4px 0px $box-shadow-color;
+}
+
+.infousuario {
+  margin: 0;
+  margin-right: 5rem;
+}
+
+.Home {
+  display: flex;
+}
+
+main {
+  width: 60%;
+
+  .main_img {
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    box-shadow: 0px 4px 4px 0px $box-shadow-color;
+  }
+
+  .main_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3rem;
+    gap: 3rem;
+
+    .main-title {
+      font-size: 40px;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    .main_info {
+      flex-direction: column;
+    }
+  }
+
+  .div-button {
+    display: flex;
+    justify-content: end;
+
+    .main-button {
+      border: 1px solid $font-color;
+      color: $font-color;
+    }
+  }
+}
+
+.container_img {
+    text-align: center;
+    margin: 1rem;
+    
+}
+
+.form-img {
+    border-radius: 15px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+
+
+    .card{
+        background-color: $cor3;
+        border: 3px solid $cor2;
+        margin: 2rem 0 0 3rem;
+        border-radius: 10%;
+        width: 36rem;
+        padding: 1rem;
+
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0.01rem 0.5rem 1rem 0.5rem;
+        }
+        .login-titulo{
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            margin-top: 0.2rem;
+            color: $cor4;
+        }
+
+        .form-img{
+            width: 15rem;
+            margin-bottom: 3rem;
+        }
+        .form-label{
+           font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+           display: flex;
+           justify-content: center;
+           font-size: 24px;
+           color: $cor4;
+        }
+        .input{
+            width: 30rem;
+            margin: 1% 1% 1% 1% ;
+        }
+        .login-button{
+            color: $cor;
+            border: 1px solid $cor;
+            background-color: aliceblue;
+        }
+        .login-button:hover{
+            background-color: $cor2;
+            color: $cor4;
+        }
+        .buttonarea{
+            display: flex;
+            justify-content: end;
+        }
+        @media screen and (max-width: 800px){
+            .login-form{
+                margin: 3rem;
+
+            }
+
+            .input{
+                width: 15rem;
+                color: rgb(0, 0, 0);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        }
+    }
+}
